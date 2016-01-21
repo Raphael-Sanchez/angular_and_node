@@ -1,0 +1,31 @@
+<html ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/myApp/lib/angular/angular.min.js"></script>
+	<script src="/myApp/lib/angular-route/angular-route.min.js"></script>
+	<script src="https://cdn.socket.io/socket.io-1.3.7.js"></script>
+	<script src="/myApp/myApp.js"></script>
+	<script src="/myApp/services/userService.js"></script>
+	<script src="/myApp/controllers/home.js"></script>
+	<script src="/myApp/controllers/login.js"></script>
+	<script src="/myApp/controllers/registration.js"></script>
+	<script src="/myApp/controllers/logout.js"></script>
+	<script src="/myApp/controllers/header.js"></script>
+
+	<title></title>
+</head>
+<body>
+	 <ng-include src="'/myApp/templates/header.html'"></ng-include>
+    <!-- /INCLUDE HEADER -->
+
+    <!-- INCLUDE HEADER -->
+    <div ng-view></div>
+    <!-- /INCLUDE HEADER -->
+
+    <!-- INCLUDE FOOTER -->
+    <ng-include src="'/myApp/templates/footer.html'"> </ng-include>
+    <!-- /INCLUDE FOOTER -->
+	 <script src="/myApp/controllers/SocketFactory.js"></script>
+</body>
+</html>

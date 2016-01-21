@@ -1,0 +1,8 @@
+<h1>Login</h1>
+<form novalidate name="formLogin" ng-submit="submit()" ng-controller="loginController">
+    <label for="name">Name :</label>
+    <li><input type="text" id="name" ng-model="name" minlength="3" maxlength="15" placeholder="Entrer un nom" required></li>
+    <label for="password">Password :</label>
+    <li><input type="password" id="password" ng-model="password" minlength="5" maxlength="25" placeholder="Entrer un mot de passe" required></li>
+    <li><button type="submit" ng-disabled="formLogin.$invalid">Sign In</li>
+</form>

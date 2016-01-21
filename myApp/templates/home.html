@@ -1,0 +1,12 @@
+<h1>HOME !</h1>
+Bienvenue {{username}} !
+<button id="btn" ng-click="killSession()">Logout</button>
+<br>
+<br>
+Nb users: {{users.length}}
+<div ng-repeat="user in users">
+	<hr>
+	Id: {{user._id}}
+	Pass: {{user.pass}}
+	UserName: {{user.login}}
+</div>
